@@ -6,10 +6,41 @@
     <description>Recent content on Hello, I am Sue.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Feb 2018 13:42:49 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 10 Jul 2018 14:49:15 +0800</lastBuildDate>
     
 	<atom:link href="https://SuxiangYang.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一些无聊的涂鸦</title>
+      <link>https://SuxiangYang.github.io/posts/drafts/</link>
+      <pubDate>Tue, 10 Jul 2018 14:49:15 +0800</pubDate>
+      
+      <guid>https://SuxiangYang.github.io/posts/drafts/</guid>
+      <description>暂时只找到这些
+  夏日三宝     北鼻伴侣     《北鼻伴侣》放在餐厅的样子     冷风和热风的扇子     无聊时画的分镜故事     我的猫汤圆   </description>
+    </item>
+    
+    <item>
+      <title>Python爬取豆瓣图片（转载）</title>
+      <link>https://SuxiangYang.github.io/posts/python_for_douban/</link>
+      <pubDate>Tue, 10 Jul 2018 14:29:15 +0800</pubDate>
+      
+      <guid>https://SuxiangYang.github.io/posts/python_for_douban/</guid>
+      <description>转自 https://blog.csdn.net/qq_38386316/article/details/78634615
+通过百度，了解了python相关知识概要。学习了python的基础知识，慢慢开始python的征程……….
+前提巩固：
+HTTP是Hyper Text Transfer Protocol (超文本传输协议)的缩写。它的发展是万维网协会（Word Wide Web Consortium）和Internet 工作小组IETF（Internet Engineering Task Force)合作的结果，他们最终发布了一系列的RFC，RFC1945定义了HTTP/1.0版本。其中最著名的就是RFC2616.RFC2616定义了今天普遍使用的一个版本–HTTP 1.1。
+HTTP 协议是用于从WWW服务器传输超文本到本地浏览器的传送协议。它可以使用浏览器更加高效，使网络传输减少。它不仅保证计算机正确快速的传输超文本，还确定传输文档的哪个部分，以及哪部分内容首先显示等。
+HTTP的请求响应模型
+HTTP协议永远都是客户端发起请求，服务器会送响应。这样就限制了使用HTTP协议，无法实现客户端没有发起请求的时候，服务器间消息推送给客户端。HTTP协议是一个无状态的协议，同一个客户端的这次请求和上次请求是没有对应关系的。
+工作流程
+一次HTTP操作成为一个事务，其工作过程可分为四步：
+首先客户机与服务器需要建立连接，只要单机某个超级链接，HTTP的工作开始。 建立链接后，客户机发送一个请求给服务器，请求方式的格式为：同意资源标识符（URL）、协议版本号，后边是MIME信息包括请求修饰符、客户机信息和可能的内容。 服务器接到请求后，给予相应的相应信息，其格式为一个状态行，包括信息的协议版本号、一个成功或错误的代码，后边是MIME信息包括服务器信息、实体信息和可能的内容。 客户端接收到服务器的信息通过浏览器显示在用户的显示屏上，然客户机与服务器断开链接。如果在以上过程中的某一步出错，那么产生的错误信息将返回到客户端，有显示屏输出。对于用户来说，这些过程是由HTTP自己完成的，用户只要用鼠标点击，等待信息显示就可以了。 了解Python中的urllib库
+Python2系列使用的是urllib2,Python3后将其全部整合为urllib,我们所需要学习的有十几个常用函数，慢慢了解吧……….
+所需工具： Python自带的编译器 PyCharm（IDE） Fiddler（网页请求见识工具，我们可以使用它来了解用户出发网页请求后发生的详细步骤，直接百度一个下载就可以了） 简单的网页爬虫 代码：
+ import urllib.request #关于urllib的使用在python2直接使用就可以了，但在python3中需要使用urllib.request,否则在写请求url时会有报错（AttributeError: module &#39;urllib&#39; has no attribute &#39;Request&#39;） #网址 url=“http://www.douban.com/” #发起请求 request=urllib.request.Request(url) #爬取结果 response=urllib.request.urlopen(request) #读取内容 data=response.read() #设置解码方式 data=data.decode(&#39;utf-8&#39;) #打印结果 print(data) #打印各类信息 print(type(response)) print(response.feturl()) print(reponse.info()) print(reponse.getcode())  </description>
+    </item>
     
     <item>
       <title></title>
@@ -35,6 +66,50 @@ color=#0099ff size=72 face=”黑体”
 color=#00ffff 可以用十六位颜色值
 color=gray 也可以用已知颜色名
 更多使用贴士见： http://xianbai.me/learn-md/article/extension/code-blocks-and-highlighting.html</description>
+    </item>
+    
+    <item>
+      <title>FIX General Structure</title>
+      <link>https://SuxiangYang.github.io/posts/fix_structure/</link>
+      <pubDate>Sun, 10 Jul 2016 14:46:27 +0800</pubDate>
+      
+      <guid>https://SuxiangYang.github.io/posts/fix_structure/</guid>
+      <description>FIX Protocol What is FIX?
+•FIX -Financial Information Exchange
+•FIX Protocol is an industry driven messaging standard for exchange of Trading related information between financial institutions.
+•FIX Protocol specification provides format for electronic messages and communication model
+•FIX can be used by financial institutions like Broker-dealers, exchanges, Institutional investors and others in the industry to communicate among each other
+•It is widely used protocol in the Financial Markets Industry today</description>
+    </item>
+    
+    <item>
+      <title>FIX Protocal General Information</title>
+      <link>https://SuxiangYang.github.io/posts/fix_protocal/</link>
+      <pubDate>Sun, 10 Jul 2016 14:40:54 +0800</pubDate>
+      
+      <guid>https://SuxiangYang.github.io/posts/fix_protocal/</guid>
+      <description>必备基础知识：
+什么是Fix
+关于Fix 定义，谁在用等，我不想过多解释，详细请参考http://www.fixprotocol.org/ ，同时你也可以在百度搜索关于中文的资料。
+协议层次
+FIX协议包含2个层次：会话层和应用层。会话层与数据的通信相关；这里的会话层指的是信息交换会话，而不是网络或通信会话。会话层主要定义系列规则，去怎样建立会话，维护会话，数据交换，和退出的机制。而应用层定义了一些具体的业务相关的消息,下单,订单执行报告等.　协议格式
+1 “标记1=值&amp;lt;分隔符&amp;gt;标记2=值　”语法格式 (本系列文章,均以此种格式讲解)　2 “FIXML语法”语法格式 (后续有专门系列文章讲解) 消息　A)FIX消息的一般格式为：一个标准头+消息体+一个标准的尾部
+一个消息,必须Tag(#8),Tag(#9),Tag(#35)开始,而且顺序保持8,9,35的顺序, 8表示开始字符串,9表示消息长
+度, 35 表示消息类型. 并且必须以 Tag#10结尾. Tag #10表示校验和码　那么给定一个消息字符 串怎么知道哪些Tag属于头,哪些属于内容,哪些属于尾呢? 可以根据Tag #35后面的值,在http://www.fixprotocol.org/FIXimate3.0/ 容易查出每种类型消息的定义.　如: 登陆消息
+8=FIX.4.3^9=65^35=A^34=1^49=BANZAI^52=20130703-15:55:08.609^56=EXEC^98=0^108=30^10=225^
+注意: 真实消息分割符不是^, 而是一个字符&amp;rsquo;\001&amp;rsquo;(java 语言)
+另外从这个登陆消息可以看出9=65表示消息内容长度是65,计算的标准为 从35=A开始到最后10之前.
+即：35=A^34=1^49=BANZAI^52=20130703-15:55:08.609^56=EXEC^98=0^108=30^ ,长度正好为65个字符. 校验和码 为225 ，这个225是从第一个字符到10之前(不包括10)所有字符一个一个转成整型，然后相加得到的和模上256而得到。
+B) Fix消息是基于理想化模式设计的，不支持消息确认的，通信双方必须自己根据收到的消息序列号判断是否有错误发生．
+C)消息的处理按从小到达依次按顺序处理的。即先到达的消息，需要先处理.
+工作原理简述
+ 通信双方，一方叫Initiator(客户端）,另一方叫Acceptor(服务器)，各自维护2个递增的序列号(发送消息序列号&amp;ndash;每发送一个消息加1，接受消息序列号&amp;ndash;每收到一个消息加1)。
+ 通信首先由Initiator开始发起建立一个网络连接 ， Acceptor(服务器),接受网络连接建立。
+ Initiator 发起登录消息请求。
+ Acceptor 收到登录请求后，经过一系列消息检查，合格后，返回登录确认。Initiator 收到登录确认后，经过一系列消息检查，合格后，双方Fix 会话层连接成功。
+ 双方交换消息
+ 退出(任意一方均可发退出消息）
+  转自 https://blog.</description>
     </item>
     
     <item>

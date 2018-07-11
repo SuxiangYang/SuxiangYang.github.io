@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://SuxiangYang.github.io/posts/drafts/</loc>
+    <lastmod>2018-07-10T14:49:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://SuxiangYang.github.io/posts/python_for_douban/</loc>
+    <lastmod>2018-07-10T14:29:15+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://SuxiangYang.github.io/about/</loc>
     <lastmod>2018-02-13T13:42:49-05:00</lastmod>
   </url>
@@ -15,6 +25,16 @@
   <url>
     <loc>https://SuxiangYang.github.io/posts/oh-alice/</loc>
     <lastmod>2018-02-09T12:32:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://SuxiangYang.github.io/posts/fix_structure/</loc>
+    <lastmod>2016-07-10T14:46:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://SuxiangYang.github.io/posts/fix_protocal/</loc>
+    <lastmod>2016-07-10T14:40:54+08:00</lastmod>
   </url>
   
   <url>
@@ -50,7 +70,7 @@
   
   <url>
     <loc>https://SuxiangYang.github.io/tags/blog/</loc>
-    <lastmod>2013-07-10T14:53:10+08:00</lastmod>
+    <lastmod>2018-07-10T14:49:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -73,7 +93,7 @@
   
   <url>
     <loc>https://SuxiangYang.github.io/</loc>
-    <lastmod>2018-02-13T13:42:49-05:00</lastmod>
+    <lastmod>2018-07-10T14:49:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -101,7 +121,7 @@
   
   <url>
     <loc>https://SuxiangYang.github.io/tags/story/</loc>
-    <lastmod>2013-07-10T14:53:10+08:00</lastmod>
+    <lastmod>2018-07-10T14:49:15+08:00</lastmod>
     <priority>0</priority>
   </url>
   

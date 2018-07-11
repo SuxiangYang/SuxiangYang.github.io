@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+    <meta name="description" content="A new Hugo site.">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="https://SuxiangYang.github.io/">
+    
+    <meta name="twitter:image" content="https://SuxiangYang.github.io/tn.png">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Hello, I am Sue.">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://SuxiangYang.github.io/">
+    <meta name="og:image" itemprop="image primaryImageOfPage" content="https://SuxiangYang.github.io/tn.png">
+    
+    <title>FIX General Structure</title>
+    <link rel="shortcut icon" href="https://SuxiangYang.github.io/sam.ico" id="favicon">
+    <link rel="stylesheet" href="https://SuxiangYang.github.io/css/style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    
+    
+
+</head>
+
+</html>
+<body><div class="wrap"><div class="section" id="title">FIX General Structure</div><div class="section" id="content">Sun Jul 10, 2016 &#183; 441 words
+
+<div><span id="tag"><a href="https://SuxiangYang.github.io/tags/blog">blog</a></span><span id="tag"><a href="https://SuxiangYang.github.io/tags/story">story</a></span></div><hr/><p>FIX Protocol
+What is FIX?</p>
+
+<p>•FIX -Financial Information Exchange</p>
+
+<p>•FIX Protocol is an industry driven messaging standard for exchange of Trading related information between financial institutions.</p>
+
+<p>•FIX Protocol specification provides format for electronic messages and communication model</p>
+
+<p>•FIX can be used by financial institutions like Broker-dealers, exchanges, Institutional investors and others in the industry to communicate among each other</p>
+
+<p>•It is widely used protocol in the Financial Markets Industry today</p>
+
+<p>Industry Players &amp; Usage
+•Exchanges</p>
+
+<p>–Use FIX to receive trades from their members and send executions back and other trading related messages</p>
+
+<p>•Buys-side firms</p>
+
+<p>–Use FIX to send and receive pre-trade, trade and post-trade messages to and from Sell-side firms</p>
+
+<p>•Sell-side firms</p>
+
+<p>–Use FIX to receive and send pre-trade, trading, post-trade messages from and to buy-side firms –Use to communicate with Exchanges and other OTC markets</p>
+
+<p>Message Categories
+•Admin Messages
+–Used to maintain the different aspects of FIX session (connection)
+•Application Messages
+–Messages used for transmission business messages</p>
+
+<p>Admin Messages
+•Logon –Client Authentication Message
+•Logout –Normal Termination of Session
+•Heartbeat-Used to check communication link between two parties
+•Test Request –used to test the health of the communication link
+•Resend Request –Request to retransmit the certain application messages
+•Reject (Session Level) –session level validation failure (different from application level validation)
+–Example invalid version, msgtype etc
+–RejectReasonis populated with error info
+•Sequence Reset/Gap Fill</p>
+
+<p>–In case of communication problems missing messages recovered or sequence is reset to ignore the missing messages</p>
+
+<p>Application Messages
+•Pre-trade messages
+–IOIs, Quotes, News, Email, Market Data, Security Info etc
+•Trade Messages
+–Single Orders, Basket/List Orders, Multi-leg orders, Executions, Order Cancel,
+Cancel/Replace, Status etc
+•Post-Trade Messages</p>
+
+<p>–Allocations, Settlement Instructions, Positions Mgmt etc</p>
+
+<p>Communication Model
+•Session based communication
+•Session is communication between two parties
+•Initiator / Client
+–party who initiates the communication
+•Acceptor /Server
+–party who receives connection request from Initiator</p>
+
+<p>–Server validates client request using login message</p>
+
+<p>FIX Session
+•FIX is a session protocol
+–Each session maintains the bi-directional messages between two parties
+–Session can spread across multiple physical connections
+–Session is maintained using sequence number
+–Both parties rely on sequence numbers to maintain the orderly communication
+–Every new session starts with sequence number 1</p>
+
+<p>–Missing messages are re-transmitted with bi-lateral agreement between both parties</p>
+
+<p>Application Messages
+•Trade Messages
+–New Order (Single)
+–Execution Report
+–Order Cancel Request
+–Order Cancel/Replace Request</p>
+
+<p>–Order Status Request etc</p>
+
+<p>Administrative Messages
+•Logon -Starts the Session
+•Heartbeat –Used to check the health in case of idle
+•Test Request
+•Resend Request</p>
+
+<p>•Logout etc</p>
+
+<p>Architecture
+•Client Side /Buy Side
+–OMS, Order Routing System, Trading Desks etc
+–FIX Engine
+•Server Side / Sell Side / Exchange
+–FIX Engine
+–OMS, Order Matching Engine / Execution Engine</p>
+
+<p>–Settlement/Back-office System etc</p>
+</div><div class="section bottom-menu"><hr/><p>
+<a href="/posts">back</a>
+ &#183;
+
+
+
+<a href="/about">Hello.</a>
+
+
+&#183; <a href="/about">I am Sue.</a>
+
+&#183; <a href="https://SuxiangYang.github.io/">main</a></p></div><div class="section footer"></div></div></body>

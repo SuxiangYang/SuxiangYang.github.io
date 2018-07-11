@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    
+    <meta name="description" content="A new Hugo site.">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="https://SuxiangYang.github.io/">
+    
+    <meta name="twitter:image" content="https://SuxiangYang.github.io/tn.png">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Hello, I am Sue.">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://SuxiangYang.github.io/">
+    <meta name="og:image" itemprop="image primaryImageOfPage" content="https://SuxiangYang.github.io/tn.png">
+    
+    <title>Python爬取豆瓣图片（转载）</title>
+    <link rel="shortcut icon" href="https://SuxiangYang.github.io/sam.ico" id="favicon">
+    <link rel="stylesheet" href="https://SuxiangYang.github.io/css/style.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    
+    
+
+</head>
+
+</html>
+<body><div class="wrap"><div class="section" id="title">Python爬取豆瓣图片（转载）</div><div class="section" id="content">Tue Jul 10, 2018 &#183; 61 words
+
+<div><span id="tag"><a href="https://SuxiangYang.github.io/tags/blog">blog</a></span><span id="tag"><a href="https://SuxiangYang.github.io/tags/story">story</a></span></div><hr/><p>转自 <a href="https://blog.csdn.net/qq_38386316/article/details/78634615">https://blog.csdn.net/qq_38386316/article/details/78634615</a></p>
+
+<p>通过百度，了解了python相关知识概要。学习了python的基础知识，慢慢开始python的征程……….</p>
+
+<p>前提巩固：</p>
+
+<p>HTTP是Hyper Text Transfer Protocol (超文本传输协议)的缩写。它的发展是万维网协会（Word Wide Web Consortium）和Internet 工作小组IETF（Internet Engineering Task Force)合作的结果，他们最终发布了一系列的RFC，RFC1945定义了HTTP/1.0版本。其中最著名的就是RFC2616.RFC2616定义了今天普遍使用的一个版本–HTTP 1.1。</p>
+
+<p>HTTP
+ 协议是用于从WWW服务器传输超文本到本地浏览器的传送协议。它可以使用浏览器更加高效，使网络传输减少。它不仅保证计算机正确快速的传输超文本，还确定传输文档的哪个部分，以及哪部分内容首先显示等。</p>
+
+<p>HTTP的请求响应模型</p>
+
+<p>HTTP协议永远都是客户端发起请求，服务器会送响应。这样就限制了使用HTTP协议，无法实现客户端没有发起请求的时候，服务器间消息推送给客户端。HTTP协议是一个无状态的协议，同一个客户端的这次请求和上次请求是没有对应关系的。</p>
+
+<p>工作流程</p>
+
+<p>一次HTTP操作成为一个事务，其工作过程可分为四步：</p>
+
+<p>首先客户机与服务器需要建立连接，只要单机某个超级链接，HTTP的工作开始。
+建立链接后，客户机发送一个请求给服务器，请求方式的格式为：同意资源标识符（URL）、协议版本号，后边是MIME信息包括请求修饰符、客户机信息和可能的内容。
+服务器接到请求后，给予相应的相应信息，其格式为一个状态行，包括信息的协议版本号、一个成功或错误的代码，后边是MIME信息包括服务器信息、实体信息和可能的内容。
+客户端接收到服务器的信息通过浏览器显示在用户的显示屏上，然客户机与服务器断开链接。如果在以上过程中的某一步出错，那么产生的错误信息将返回到客户端，有显示屏输出。对于用户来说，这些过程是由HTTP自己完成的，用户只要用鼠标点击，等待信息显示就可以了。
+了解Python中的urllib库</p>
+
+<p>Python2系列使用的是urllib2,Python3后将其全部整合为urllib,我们所需要学习的有十几个常用函数，慢慢了解吧……….</p>
+
+<p>所需工具：
+Python自带的编译器
+PyCharm（IDE）
+Fiddler（网页请求见识工具，我们可以使用它来了解用户出发网页请求后发生的详细步骤，直接百度一个下载就可以了）
+简单的网页爬虫
+代码：</p>
+
+<pre><code> import urllib.request
+ #关于urllib的使用在python2直接使用就可以了，但在python3中需要使用urllib.request,否则在写请求url时会有报错（AttributeError: module 'urllib' has no attribute 'Request'） 
+ #网址
+ url=“http://www.douban.com/”
+ #发起请求
+ request=urllib.request.Request(url)
+ #爬取结果
+ response=urllib.request.urlopen(request)
+ #读取内容
+ data=response.read()
+ #设置解码方式
+ data=data.decode('utf-8')
+ #打印结果
+ print(data)
+ #打印各类信息
+ print(type(response))
+ print(response.feturl())
+ print(reponse.info())
+ print(reponse.getcode())
+</code></pre>
+</div><div class="section bottom-menu"><hr/><p>
+<a href="/posts">back</a>
+ &#183;
+
+
+
+<a href="/about">Hello.</a>
+
+
+&#183; <a href="/about">I am Sue.</a>
+
+&#183; <a href="https://SuxiangYang.github.io/">main</a></p></div><div class="section footer"></div></div></body>
