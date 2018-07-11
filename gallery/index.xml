@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photography on Hello, I am Sue.</title>
+    <link>http://SuxiangYang.github.io/gallery/</link>
+    <description>Recent content in Photography on Hello, I am Sue.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://SuxiangYang.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
